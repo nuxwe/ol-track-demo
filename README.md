@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/webnewshow/blog/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+# ol-track
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ol-track基于`ol`v6以上版本,实现在地图中车辆及人员轨迹的回放,使用之前请确认ol版本。
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### 安装
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/webnewshow/blog/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+npm install ol-track
+```
+### 使用
+```
+import olTrack from "ol-track"
+```
+### 方法
+ * pamars{option}
+ * event
+ * startAnimation:运动
+ * stopAnimation:停止
+ * setSpeed:设置速度
+ * setNewRoute:重新设置路线
+ * moveStart:回到起点
+ * getClickFeature:获取点数据
+ * addPopup:向地图中添弹窗
